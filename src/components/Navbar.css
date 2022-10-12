@@ -26,6 +26,10 @@ a {
   background: #00307e;
 }
 
+.nav-link:hover {
+  background-color: #656865;
+}
+
 .nav-brand {
   text-transform: uppercase;
   font-weight: bold;
