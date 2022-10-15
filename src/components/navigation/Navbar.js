@@ -1,19 +1,19 @@
-import React, { useState } from "react";
-import "../navigation/Navbar.css";
+import React, { useState } from 'react';
+import './Navbar.css';
 
 const Navbar = () => {
-  const [active, setActive] = useState("nav-menu");
-  const [toggleIcon, setToggleIcon] = useState("nav-toggle");
+  const [active, setActive] = useState('nav-menu');
+  const [toggleIcon, setToggleIcon] = useState('nav-toggle');
   const navToggle = () => {
-    active === "nav-menu"
-      ? setActive("nav-menu nav-active")
-      : setActive("nav-menu");
+    active === 'nav-menu'
+      ? setActive('nav-menu nav-active')
+      : setActive('nav-menu');
 
     // ToggleIcon
 
-    toggleIcon === "nav-toggle"
-      ? setToggleIcon("nav-toggle toggle")
-      : setToggleIcon("nav-toggle");
+    toggleIcon === 'nav-toggle'
+      ? setToggleIcon('nav-toggle toggle')
+      : setToggleIcon('nav-toggle');
   };
 
   return (
@@ -50,9 +50,9 @@ const Navbar = () => {
           </li>
         </ul>
         <div onClick={navToggle} className={toggleIcon}>
-          <div className="line1"></div>
-          <div className="line2"></div>
-          <div className="line3"></div>
+          <div className="line1" />
+          <div className="line2" />
+          <div className="line3" />
         </div>
       </nav>
     </div>
