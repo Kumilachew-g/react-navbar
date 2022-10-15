@@ -5,6 +5,7 @@ const Navbar = () => {
   const [active, setActive] = useState('nav-menu');
   const [toggleIcon, setToggleIcon] = useState('nav-toggle');
   const navToggle = () => {
+    /* eslint-disable no-unused-expressions */
     active === 'nav-menu'
       ? setActive('nav-menu nav-active')
       : setActive('nav-menu');
@@ -49,6 +50,8 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
+
+        {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
         <div onClick={navToggle} className={toggleIcon}>
           <div className="line1" />
           <div className="line2" />
