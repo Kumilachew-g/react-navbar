@@ -1,20 +1,20 @@
-import React, { useState } from "react";
-import "./Navbar.css";
+import React, { useState } from 'react';
+import './Navbar.css';
 
 const Navbar = () => {
-  const [active, setActive] = useState("nav-menu");
-  const [toggleIcon, setToggleIcon] = useState("nav-toggle");
+  const [active, setActive] = useState('nav-menu');
+  const [toggleIcon, setToggleIcon] = useState('nav-toggle');
   const navToggle = () => {
     /* eslint-disable no-unused-expressions */
-    active === "nav-menu"
-      ? setActive("nav-menu nav-active")
-      : setActive("nav-menu");
+    active === 'nav-menu'
+      ? setActive('nav-menu nav-active')
+      : setActive('nav-menu');
 
     // ToggleIcon
 
-    toggleIcon === "nav-toggle"
-      ? setToggleIcon("nav-toggle toggle")
-      : setToggleIcon("nav-toggle");
+    toggleIcon === 'nav-toggle'
+      ? setToggleIcon('nav-toggle toggle')
+      : setToggleIcon('nav-toggle');
   };
 
   return (
