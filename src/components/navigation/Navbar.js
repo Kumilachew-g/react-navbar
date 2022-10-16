@@ -52,7 +52,6 @@ const Navbar = () => {
         </ul>
 
         {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
-
         <div onClick={navToggle} className={toggleIcon}>
           <div className="line1" />
           <div className="line2" />
